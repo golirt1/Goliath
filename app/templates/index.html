@@ -5,11 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login/css/login.css') }}">
 </head>
 
 <body>
-    <h1>¡Bienvenido a Flask!</h1>
+    <main class="login-main-container display-column">
+        <section class="logo-seccion display-column">
+            <figure class="logo-container display-column">
+                <img class="logo" src="{{ url_for('static', filename='src/Logo.svg') }}" alt="Logo empresa">
+                <img src="{{ url_for('static', filename='src/Hear.svg') }}" alt="Company name Hear">
+            </figure>
+            <div class="wave"></div>
+        </section>
+        <section class="botones-registro-secion display-column">
+            <article class="botones-registro-contenedor display-column">
+                <h1>Regístrate</h1>
+                <button class="boton-registro-google boton-registro">
+                    <img src="" alt="">
+                    <span>Continuar con Google</span>
+                </button>
+                <button class="boton-registro-facebook boton-registro">
+                    <img src="" alt="">
+                    <span>Continuar con Facebook</span></button>
+                <div class="boton-registro-option">
+                    <hr>
+                    <span> o bien </span>
+                    <hr>
+                </div>
+                <button class="boton-registro-crear boton-registro">Crea una cuenta ahora</button>
+                <div class="boton-registro-already-register">
+                    <span>¿Ya tienes una cuenta? </span>
+                    <a href="">Inicia sesión</a>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
