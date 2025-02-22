@@ -1,0 +1,121 @@
+:root {
+  --background: #0a0928;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+}
+.display-column {
+  display: flex;
+  flex-direction: column;
+}
+.login-main-container {
+  height: 100%;
+  background-color: var(--background);
+  overflow: hidden;
+}
+.logo-seccion {
+  align-items: center;
+  height: 50%;
+  position: relative;
+
+  background-image: linear-gradient(
+    hotpink,
+    rgba(255, 0, 0, 0.918),
+    rgba(255, 0, 0, 0.918)
+  );
+}
+.logo-container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  row-gap: 20px;
+}
+.wave {
+  position: absolute;
+  height: 63px;
+  width: 100%;
+  background-color: transparent;
+  bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: var(--background);
+  right: -1.5%;
+  top: 60%;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: rgb(237 0 0);
+  left: -1.5%;
+  top: 40%;
+}
+.botones-registro-secion {
+  align-items: center;
+  height: 50%;
+  justify-content: center;
+  color: white;
+}
+.botones-registro-contenedor {
+  width: 250px;
+  align-items: center;
+}
+.boton-registro {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  margin: 5px 0;
+  border: none;
+  color: white;
+}
+.boton-registro-option {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.boton-registro-option::before,
+.boton-registro-option::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #d1d5db;
+}
+.boton-registro-option span {
+  padding: 0 1rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+.boton-registro-google {
+  background-color: #de4a39;
+}
+.boton-registro-facebook {
+  background-color: #3457a0;
+}
+.boton-registro-crear {
+  background-color: #ededed;
+  color: black;
+  font-weight: bolder;
+}
+.boton-registro-already-register {
+}
